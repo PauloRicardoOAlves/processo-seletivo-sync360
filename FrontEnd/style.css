@@ -1,0 +1,15 @@
+
+:root{
+    --background-color: #ebe7b7;
+    --primary-color: #029b99;
+    --second-color: #de4f15;
+}
+
+.navbar{
+    background-color: var(--primary-color);
+}
+
+.main{
+    background-color: var(--background-color);
+}
+
