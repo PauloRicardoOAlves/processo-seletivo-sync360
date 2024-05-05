@@ -22,12 +22,76 @@
     </div>
   </nav>
   <main class="main">
-    <section class="profile">
+    <div class="main-container">
+      <section class="main-container-editProfile">
+          <form class="row g-3">
+            <div class="col-md-9">
+              <label for="inputName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="inputName" required>
+            </div>
+            <div class="col-md-9">
+              <label for="input" class="form-label">Idade</label>
+              <input type="number" class="form-control" id="inputAge" >
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="R. Borboletas psicodélicas, Vila Guarani, São Paulo - SP">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Complemento</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, bloco...">
+            </div>
+            <div class="col-md-8">
+              <label for="inputCity" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">Estado</label>
+              <select id="inputState" class="form-select">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="inputBio" class="form-label">Bio</label>
+              <textarea class="form-control" id="inputBio" placeholder="Fale sobre você, sua vida, seus hobbies."></textarea>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          
+          </form>
+      </section>
+      <section class="main-container-profile">
 
-    </section>
-    <section>
-
-    </section>
+      </section>
+    </div>
   </main>
   <footer>
 
@@ -40,8 +104,3 @@
 </body>
 
 </html>
-
-<img decoding="async" class="brz-img"
-  srcset="https://sync360.io/wp-content/uploads/brizy/imgs/logo-white-1-215x44x0x0x215x44x1584136401.png 1x, https://sync360.io/wp-content/uploads/brizy/imgs/logo-white-1-430x88x0x0x430x88x1584136401.png 2x"
-  src="https://sync360.io/wp-content/uploads/brizy/imgs/logo-white-1-200x41x0x0x200x41x1584136401.png" alt=""
-  draggable="false" loading="lazy">

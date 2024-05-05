@@ -1,15 +1,42 @@
-
-:root{
+:root {
     --background-color: #ebe7b7;
     --primary-color: #029b99;
     --second-color: #de4f15;
+    --dark-contrast: #001f21;
+    --clear-constrast: #ecc039;
 }
 
-.navbar{
+.navbar {
     background-color: var(--primary-color);
 }
 
-.main{
+.main {
     background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+.main-container {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border: 1px solid var(--dark-contrast);
+    border-radius: 1%;
+}
+
+.main-container-editProfile {
+    background-color: var(--primary-color);
+    width: 50%;
+    padding: 2%;
+    align-content: center;
+}
+
+.main-container-profile {
+    background-color: var(--second-color);
+    padding: 0%;
+    width: 50%;
+}
