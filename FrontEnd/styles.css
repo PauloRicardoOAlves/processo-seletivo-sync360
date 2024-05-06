@@ -24,8 +24,6 @@
     display: flex;
     width: 80%;
     height: 80%;
-    border: 1px solid var(--dark-contrast);
-    border-radius: 1%;
 }
 
 .main-container-editProfile {
@@ -37,6 +35,13 @@
 
 .main-container-profile {
     background-color: var(--second-color);
-    padding: 0%;
     width: 50%;
+    padding: 2%;
+    align-content: center;
+}
+
+#profileBio{
+    background: transparent;
+    border: none;
+    resize: none;
 }
