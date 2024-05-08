@@ -24,31 +24,31 @@
   <main class="main">
     <div class="main-container">
       <section class="main-container-editProfile">
-        <form class="row g-3">
+        <form class="row g-3" id="userForm">
           <div class="col-md-9">
             <label for="inputName" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="inputName" required>
+            <input type="text" class="form-control" id="inputName">
           </div>
           <div class="col-md-3">
             <label for="input" class="form-label">Idade</label>
-            <input type="number" class="form-control" id="inputAge" required>
+            <input type="number" class="form-control" id="inputAge" >
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">Endereço</label>
-            <input type="text" class="form-control" id="inputAddress"
-              placeholder="R. Borboletas psicodélicas, Vila Guarani, São Paulo - SP">
+            <input type="text" class="form-control" id="inputAdress"
+              placeholder="R. Borboletas psicodélicas" >
           </div>
           <div class="col-12">
-            <label for="inputAddress2" class="form-label">Complemento</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, bloco...">
+            <label for="inputAddress2" class="form-label">Bairro</label>
+            <input type="text" class="form-control" id="inputAdress2" placeholder="Vila Guarani" >
           </div>
           <div class="col-md-8">
             <label for="inputCity" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" >
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label">Estado</label>
-            <select id="inputState" class="form-select">
+            <select id="inputState" class="form-select" >
               <option value="">Selecione um estado</option>
               <option value="AC">Acre</option>
               <option value="AL">Alagoas</option>
@@ -82,10 +82,10 @@
           <div class="col-12">
             <label for="inputBio" class="form-label">Bio</label>
             <textarea class="form-control" id="inputBio"
-              placeholder="Fale sobre você, sua vida, seus hobbies."></textarea>
+              placeholder="Fale sobre você, sua vida, seus hobbies." ></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" onclick="userData()">Enviar</button>
           </div>
 
         </form>
@@ -127,10 +127,11 @@
 
   </footer>
 
-  <script type="text/javascript" href="app.js"></script>
+  <script type="text/javascript" src="app.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
 </body>
 
 </html>
