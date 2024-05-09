@@ -1,8 +1,6 @@
-
-
 document.getElementById("userForm").addEventListener("submit", async function (event) {
     event.preventDefault()
-    const formData = new FormData(this)
+
 
     const data = JSON.stringify(userData())
 
@@ -18,8 +16,6 @@ document.getElementById("userForm").addEventListener("submit", async function (e
         .then(response => response.json())
         .then(data => alert(data))
         .catch(error => console.error("Erro:", error))
-
-        const r = await re
 });
 
 
