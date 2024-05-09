@@ -1,9 +1,9 @@
 :root {
-    --background-color: #ebe7b7;
-    --primary-color: #029b99;
-    --second-color: #de4f15;
-    --dark-contrast: #001f21;
-    --clear-constrast: #ecc039;
+    --background-color: #white;
+    --primary-color: #3e838c;
+    --second-color: #8ebdb6;
+    --dark-contrast: #2b2726;
+    --clear-constrast: #7dad93;
 }
 
 .navbar {
@@ -21,6 +21,7 @@
 }
 
 .main-container {
+    background-color: var(--primary-color);
     display: flex;
     width: 80%;
     height: 80%;
@@ -44,4 +45,11 @@
     background: transparent;
     border: none;
     resize: none;
+}
+
+@media (max-width: 480px) {
+    .main-container{
+        flex-direction: column;
+    }
+    
 }

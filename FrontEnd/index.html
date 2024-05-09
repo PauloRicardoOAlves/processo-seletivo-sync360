@@ -31,24 +31,23 @@
           </div>
           <div class="col-md-3">
             <label for="input" class="form-label">Idade</label>
-            <input type="number" class="form-control" id="inputAge" >
+            <input type="number" class="form-control" id="inputAge">
           </div>
           <div class="col-12">
             <label for="inputAdress" class="form-label">Endereço</label>
-            <input type="text" class="form-control" id="inputAdress"
-              placeholder="R. Borboletas psicodélicas" >
+            <input type="text" class="form-control" id="inputAdress" placeholder="R. Borboletas psicodélicas">
           </div>
           <div class="col-12">
             <label for="inputAdress2" class="form-label">Bairro</label>
-            <input type="text" class="form-control" id="inputAdress2" placeholder="Vila Guarani" >
+            <input type="text" class="form-control" id="inputAdress2" placeholder="Vila Guarani">
           </div>
           <div class="col-md-8">
             <label for="inputCity" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" >
+            <input type="text" class="form-control" id="inputCity">
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label">Estado</label>
-            <select id="inputState" class="form-select" >
+            <select id="inputState" class="form-select">
               <option value="">Selecione um estado</option>
               <option value="AC">Acre</option>
               <option value="AL">Alagoas</option>
@@ -82,43 +81,42 @@
           <div class="col-12">
             <label for="inputBio" class="form-label">Bio</label>
             <textarea class="form-control" id="inputBio"
-              placeholder="Fale sobre você, sua vida, seus hobbies." ></textarea>
+              placeholder="Fale sobre você, sua vida, seus hobbies."></textarea>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary" onclick="userData()">Enviar</button>
+            <button type="submit" class="btn btn-primary" onclick="updateProfile()">Enviar</button>
           </div>
 
         </form>
       </section>
-      <section class="main-container-profile">
+      <section class="main-container-profile" id="profileSection">
         <div class="main-container-profile-photo">
           <img src="./assets/blank-profile-picture-973460_640.webp" class="rounded mx-auto d-block" alt="foto de perfil"
             width="120" height="120">
         </div>
         <div>
           <div class="main-container-profile-name col-12">
-            <p><strong>Nome: </strong>Goku</p>
+            <p><strong>Nome: </strong><span id = "profileName">Goku</span></p>
           </div>
           <div class="main-container-profile-age col-12">
-            <p><strong>Idade:</strong> 70 </p>
+            <p><strong>Idade:</strong><span id="profileAge">70</span> </p>
           </div>
         </div>
         <div class="main-container-profile-adress col-12">
-          <p><strong>Rua:</strong> R. Borboletas psicodélicas, 123</p>
+          <p><strong>Rua: </strong><span id="profileAdress">R. Borboletas psicodélicas, 123</span></p>
           <div class="main-container-profile-adress2 col-12">
-            <p><strong>Bairro: </strong>Vila Guarani</p>
+            <p><strong>Bairro: </strong><span id="profileAdress2">Vila Guarani</span></p>
           </div>
           <div class="main-container-profile-city">
-            <p><strong>Cidade: </strong>São Paulo</p>
+            <p><strong>Cidade: </strong><span id="profileCity">São Paulo</span></p>
           </div>
         </div>
         <div class="main-container-profile-estate col-12">
-          <p><strong>Estado:</strong> SP</p>
+          <p><strong>Estado:</strong> <span id="profileState">SP</span></p>
         </div>
         <div class="main-container-profile-bio col-12">
           <label for="bioProfile"><strong>Bio:</strong></label>
-          <textarea class="form-control" id="profileBio"
-          placeholder="Oi, eu sou Goku!" rows=5 readonly></textarea>
+          <textarea class="form-control" id="profileBio" placeholder="Oi, eu sou Goku!" rows=5 readonly></textarea>
         </div>
       </section>
     </div>
