@@ -7,7 +7,7 @@ async function validationForm(req, res, next) {
         await formSchema.validateAsync(req.body)
         next()
     } catch (error) {
-        return res.status(400).json({mensage: error.message})
+        return res.status(400).json(error.message)
     }
 
 }

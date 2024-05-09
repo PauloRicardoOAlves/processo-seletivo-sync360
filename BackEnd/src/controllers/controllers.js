@@ -1,8 +1,8 @@
 function teste(req, res) {
-    console.log("ok")
-    return res.status(200).json({ mensagem: "deu certo!" })
+    console.log(req.body)
+    return res.status(200).json("ok")
 }
 
 module.exports = {
-teste
+    teste
 }
